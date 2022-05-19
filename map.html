@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/pushbar/pushbar.css">
+
+    <!-- Google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- wickedcss -->
+    <link rel="stylesheet" href="assets/css/wickedcss.min.css">
+
+    <!-- rwd Image Map -->
+
+
+    <title>災難情境模擬演練</title>
+
+
+</head>
+
+<body style="background-color: #4d4d4d;">
+
+    <div id="container">
+
+        <header>
+            <script src="assets/js/header-dark.js"></script>
+        </header>
+
+        <!-- pushbar -->
+        <script src="assets/js/pushbar-content.js"></script>
+
+        <section class="main">
+            <div class="content pagetitle-dark">
+                <h3>台南地震</h3>
+                <h5>災難應變路徑圖</h5>
+                <!-- 裝置寬度過小提示 -->
+                <h6 class="description-bg d-sm-none d-flex justify-content-center mt-4 " style="color: #ffb100; text-align: center; line-height: 1.5rem;">您使用的裝置螢幕較小<br>請將裝置橫放<br>可在本頁面獲得較好的使用體驗</h6>
+                <!-- 內容開始 -->
+                <div class="container d-none d-sm-block">
+                    <div class="d-flex ">
+                        <button onclick="location.href='story-video.html';" type="submit" class="back-btn m-2 ">回上一頁</button>
+                    </div>
+
+                    <div class="row" style="align-items: center;">
+                        <!-- rwd-map -->
+                        <div class="col-lg-9 col-md-8 mb-5">
+                            <div class="rwd-map">
+                                <img src="assets/img/tainan-617.jpg" width="1020" height="700"
+                                    usemap="#taiana-earthquake" alt="" />
+                                <map name="taiana-earthquake">
+                                    <area shape="poly" coords="152,95,93,197,93,310,300,310,300,235,308,178" href="#"
+                                        title="前進指揮中心" alt="前進指揮中心" />
+                                    <area shape="poly" coords="278,400,112,500,112,622,251,622,370,552,370,480" href="#"
+                                        title="臨時收容安置中心" alt="臨時收容安置中心" />
+                                    <area shape="poly" coords="395,162,340,353,501,500,662,343,545,223,538,165" href="#"
+                                        tit,le="災難現場" alt="災難現場" />
+                                    <area shape="poly" coords="657,428,570,483,569,566,645,626,723,626,750,550,750,478"
+                                        href="#" title="醫院" alt="醫院" />
+                                    <area shape="poly" coords="670,28,553,97,553,193,605,230,727,228,792,178,793,94"
+                                        href="#" title="殯儀館" alt="殯儀館" />
+                                    <area shape="poly" coords="855,245,758,301,758,440,800,470,929,470,929,289" href="#"
+                                        title="安置旅館" alt="安置旅館" />
+                                </map>
+                            </div>
+                        </div>
+
+                        <!-- 角色選擇區 -->
+                        <div class="p-3 col-lg-3 col-md-4 mb-5 map-role-box">
+                            <!-- 發生地點 -->
+                            <!-- 災難現場 -->
+                            <h4 align="center" style="color: #62bdf3;">災難現場</h4>
+                            <p align="center" style="color: #ffb100;">請選擇身份</p>
+
+                            <!-- 角色選擇-手風琴選單 -->
+                            <div class="accordion" id="accordionExample">
+                                <!-- 角色分類 ex.社政、醫療、NGO -->
+                                <!-- 社政社工 -->
+                                <div id="headingOne" class="sa-sw">
+                                    <button class="btn" type="button" data-toggle="collapse" aria-expanded="false"
+                                        data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <div class="row role-type">
+                                            <img class="ml-2 mr-2" src="assets/img/map-role-sa-sw.svg" alt="">
+                                            <h5 class="m-2">社政社工</h5>
+                                        </div>
+                                    </button>
+                                    <!-- 角色職位 ex.主管、督導、社工-->
+                                    <div id="collapseOne" class="collapse role-position" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <li><a href="script-select.html">社政社工主管</a></li>
+                                        <li><a href="script-select.html">社工督導</a></li>
+                                        <li><a href="script-select.html">社政社工</a></li>
+                                    </div>
+                                </div>
+
+                                <!-- 角色分類 ex.社政、醫療、NGO -->
+                                <!-- 醫務社工 -->
+                                <div id="headingTwo" class="med-sw">
+                                    <button class="btn" type="button" data-toggle="collapse" aria-expanded="false"
+                                        data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        <div class="row role-type">
+                                            <img class="ml-2 mr-2" src="assets/img/map-role-med-sw.svg" alt="">
+                                            <h5 class="m-2">醫務社工</h5>
+                                        </div>
+                                    </button>
+                                    <!-- 角色職位 ex.主管、督導、社工-->
+                                    <div id="collapseTwo" class="collapse role-position" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <li><a href="script-select.html">醫務社工主管</a></li>
+                                        <li><a href="script-select.html">醫務社工</a></li>
+                                    </div>
+                                </div>
+
+                                <!-- 角色分類 ex.社政、醫療、NGO -->
+                                <!-- NGO社工 -->
+                                <div id="headingThree" class="ngo-sw">
+                                    <button class="btn" type="button" data-toggle="collapse" aria-expanded="false"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <div class="row role-type">
+                                            <img class="ml-2 mr-2" src="assets/img/map-role-ngo-sw.svg" alt="">
+                                            <h5 class="m-2">NGO社工</h5>
+                                        </div>
+                                    </button>
+                                    <!-- 角色職位 ex.主管、督導、社工-->
+                                    <div id="collapseThree" class="collapse role-position"
+                                        aria-labelledby="headingThree" data-parent="#accordionExample">
+                                        <li><a href="script-select.html">NGO社工</a></li>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            <script src="assets/js/footer.js"></script>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- pushbar -->
+    <script type="text/javascript" src="assets/pushbar/pushbar.js"></script>
+    <script type="text/javascript">
+        var pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+        });
+    </script>
+
+    <!-- rwd-map -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="assets/js/jquery.rwdImageMaps.min.js"></script>
+    <script>
+        $(document).ready(function (e) {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+
+
+</body>
+
+</html>

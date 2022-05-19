@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/pushbar/pushbar.css">
+
+    <!-- Google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- wickedcss -->
+    <link rel="stylesheet" href="assets/css/wickedcss.min.css">
+
+
+    <title>災難情境模擬演練</title>
+</head>
+
+
+<body>
+
+    <div id="container">
+
+        <header>
+            <script src="assets/js/header-light.js"></script>
+        </header>
+
+        <!-- pushbar -->
+        <script src="assets/js/pushbar-content.js"></script>
+
+        <!-- background -->
+        <figure class="background1 floater"><img src="assets/img/bg-b.png" alt=""></figure>
+        <figure class="background2 floater"><img src="assets/img/bg-o.png" alt=""></figure>
+
+        <section class="main">
+            <div class="content login-content row">
+                <div class="d-none d-md-block col-md-6 ">
+                    <img src="assets/img/mainimage.png" alt="" style="width: 80%;">
+                </div>
+                <div class="col-md-6">
+                    <!-- login box -->
+                    <div class="d-flex justify-content-center mb-3">
+                        <div class="p-2">
+                            <div class="login-box" align="center">
+                                <div class="mb-3">
+                                    <img src="assets/img/logo-login.png" alt=""
+                                        style="width: 25%; margin-bottom: 15px;">
+                                    <h5>
+                                        <font color="#62bdf3">災難情境<font color="#ffb100">模擬</font>演練</font>
+                                    </h5>
+                                </div>
+
+                                <div class="container">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs mb-4" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#login">登入</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#signup">註冊</a>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content login-tab">
+                                        <!-- log in -->
+                                        <div id="login" class="container tab-pane active">
+                                            <form action="/action_page.php">
+                                                <div class="form-group">
+                                                    <div class=" container1">
+                                                        <label class="mr-sm-2">帳號：</label>
+                                                        <span><input type="email" class="form-control mr-sm-2"
+                                                                id="email2" placeholder="輸入E-mail" name="email"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class=" container1">
+                                                        <label class="mr-sm-2">密碼：</label>
+                                                        <span><input type="email" class="form-control mr-sm-2"
+                                                                id="email2" placeholder="輸入密碼" name="email"></span>
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                            <a class="forget-ap" href="">忘記帳號/密碼</a>
+                                            <button onclick="location.href = 'story-type-select.html';" type="submit" class="blue-btn m-3">測試登入</button>
+                                        </div>
+
+                                        <!-- sign up -->
+                                        <div id="signup" class="container tab-pane fade">
+                                            <form action="/action_page.php">
+                                                <div class="form-group">
+                                                    <div class=" container1">
+                                                        <label for="email2" class="mr-sm-2">姓名：</label>
+                                                        <span><input type="email" class="form-control mr-sm-2"
+                                                                id="email2" placeholder="輸入您的姓名" name="email"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="container1">
+                                                        <label for="email2" class="mr-sm-2">單位：</label>
+                                                        <select class="form-control mr-sm-2" name="state">
+                                                            <option value="1">教育/學術單位</option>
+                                                            <option value="2">醫務社工</option>
+                                                            <option value="3">社政社工</option>
+                                                            <option value="4">ＮＧＯ</option>
+                                                            <option value="5">社區基層單位</option>
+                                                            <option value="6">其他</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class=" container1">
+                                                        <label class="mr-sm-2">帳號：</label>
+                                                        <span><input type="email" class="form-control mr-sm-2"
+                                                                id="email2" placeholder="輸入E-mail" name="email"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class=" container1">
+                                                        <label class="mr-sm-2">密碼：</label>
+                                                        <span><input type="email" class="form-control mr-sm-2"
+                                                                id="email2" placeholder="輸入密碼" name="email"></span>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                            <br>
+                                            <div style="border-bottom: 1px dashed #bbbbbb;"></div>
+                                            <br>
+
+                                            <ul class="hr-tab ">
+                                                <div style="text-align: left;">
+                                                    <li>是否有意願納入災難社工人力資料庫人才？</li>
+                                                    <label><input style="width: auto;" type="radio" name="1"
+                                                            value="yes">是</label>
+                                                    <label><input style="width: auto;" type="radio" name="1"
+                                                            value="no">否</label>
+                                                </div>
+                                                <div style="text-align: left;">
+                                                    <li>是否願意成爲（完整計劃名稱）指導員？</li>
+                                                    <div style="text-align: left;">
+                                                        <label><input style="width: auto;" type="radio" name="2"
+                                                                value="yes">是</label>
+                                                        <label><input style="width: auto;" type="radio" name="2"
+                                                                value="no">否</label>
+                                                    </div>
+                                                </div>
+                                                <div style="text-align: left;">
+                                                    <li>災難發生時是否願意提供支援？</li>
+                                                    <div style="text-align: left;">
+                                                        <label><input style="width: auto;" type="radio" name="3"
+                                                                value="yes">是</label>
+                                                        <label><input style="width: auto;" type="radio" name="3"
+                                                                value="no">否</label>
+                                                    </div>
+                                                </div>
+                                            </ul>
+
+                                            <div class="row">
+                                                <div class="form-group col-lg-6">
+                                                    <div class=" container1">
+                                                        <label for="" class="mr-sm-2">居住縣市：</label>
+                                                        <select name="" id="" class="form-control">
+                                                            <option value="">居住縣市</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-lg-6">
+                                                    <div class=" container1">
+                                                        <label for="" class="mr-sm-2">居住鄉鎮：</label>
+                                                        <select name="" class="form-control">
+                                                            <option value="">鄉鎮市區</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <p class="mr-sm-2" style="text-align: left;">過去災難參與經驗：</p>
+                                                <textarea class="form-control" rows="3" id="comment"
+                                                    placeholder="請簡易描述"></textarea>
+                                            </div>
+                                            <button onclick="location.href = 'story-type-select.html';" type="submit" class="blue-btn m-3">註&nbsp;&nbsp;冊</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <script src="assets/js/footer.js"></script>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- wickedcss -->
+    <script>
+        $(window).scroll(function () {
+            $('#animatedElement').each(function () {
+                var imagePos = $(this).offset().top;
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow + 450) {
+                    $(this).addClass("floater");
+                }
+            });
+        });
+    </script>
+    <script>
+        $('#animatedElement').click(function () { $(this).addClass("floater"); });
+    </script>
+
+    <!-- pushbar -->
+    <script type="text/javascript" src="assets/pushbar/pushbar.js"></script>
+    <script type="text/javascript">
+        var pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,599 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    /* overflow: hidden; */
+    /* overflow-x: hidden;
+    position:relative;
+    left:0px;top:0px; */
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header{
+    background: #999;
+    flex: 0 0 auto;
+}
+.main{
+    flex: 1 0 auto;
+}
+footer{
+    flex: 0 0 auto;
+    width: 100%; 
+    background-color: #62bdf3;
+    color: white; 
+    padding: 1rem; 
+    text-align:center; 
+    font-size: small;
+}
+footer p{
+    margin-bottom: 0%;
+}
+.content{
+    width: 80%; 
+    margin:0 auto;
+}
+a:hover {
+    text-decoration: none;
+}
+/* navbar */
+.navbar{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    color: #707070;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.navbar h4{
+    margin-bottom: 0%;
+}
+.navbar img{
+    width: 150px;
+    padding: 10px;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+}
+.nav-link i{
+    margin: .3rem;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar button:hover{
+    box-shadow: none;
+    background-color: #70707025;
+}
+/* pushbar */
+.pushbar{
+    padding: 2rem 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.pushbar a{
+    color: #707070;
+}
+.pushbar a:hover{
+    color: #ffb100;
+}
+.pushbar li {
+    color: #62bdf3;
+}
+
+.pushbar li:hover {
+    color: #ffb100;
+}
+/* 說明區 direction */
+.direction{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.direction-img{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* login */
+.login-content{
+    min-height: 100vh;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.login{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.login-box{
+    box-shadow: 3px 3px 10px #70707025;
+    border-radius: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem 1rem;
+}
+.form-inline label{
+    margin-bottom: .5rem;
+}
+.form-inline input{
+    margin-bottom: .75rem;
+}
+.forget-ap{
+    display: block; 
+    font-size: 12px; 
+    letter-spacing: 1px; 
+    color: #ffb100
+}
+.forget-ap:hover{
+    display: block; 
+    font-size: 12px; 
+    letter-spacing: 1px; 
+    color: red
+}
+
+.nav-tabs .nav-link.active{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #62bdf3;
+}
+.nav-tabs a{
+    color: #707070;
+}
+.pagetitle{
+    color: #62bdf3; 
+    text-align: center; 
+    margin-top: 3rem; 
+    margin-bottom:1rem;
+    text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+}
+.login-tab label {
+    display: table-cell;
+    width: 1px;
+    white-space: nowrap
+}
+
+.login-tab span {
+    display: table-cell;
+    padding: 0 0 0 5px
+}
+.container1 {
+    display: table;
+    width: 100%
+}
+.hr-tab input {
+    margin: .7rem;
+}
+
+.hr-tab li {
+    text-align: left;
+}
+/* page */
+.login-tab input {
+    width: 100%
+}
+
+.pagetitle-dark h3{
+    color: #62bdf3; 
+    text-align: center; 
+    margin-top: 3rem; 
+    margin-bottom:1rem;
+}
+.pagetitle-dark h5{
+    color: #fff; 
+    text-align: center;
+}
+.pagetitle-dark h6{
+    color: #ffb100;
+}
+.question p{
+    color: #fff;
+}
+.pagetitle-dark textarea{
+    width: 100%; 
+    padding: .5rem; 
+    line-height: 200%; 
+    border: rgb(150, 150, 150) solid 1px; 
+    border-radius: .5rem;
+}
+.about p{
+    margin: 1.5rem;
+}
+/* background-floater */
+.background1{
+    position: absolute;
+    display: block; 
+    z-index: -1;
+    overflow: hidden;
+}
+.background1 img{
+    width: 65vh;
+}
+.background2{
+    position: fixed;
+    display: block; 
+    z-index: -1;
+    overflow: hidden;
+    right: 0rem;
+    bottom: -1rem;
+}
+.background2 img{
+    width: 75vh;
+}
+/* st-1 */
+.storybox-around{
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+}
+.storybox{
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+}
+.storybox:hover{
+    position: relative;
+    top: -.3rem;
+    left: -.3rem;
+}
+.storybox-a{
+    display: flex;
+    justify-content: center;
+}
+.storybox img{
+    border-radius: .8rem;
+    width: 100%; 
+    height: 100%;
+}
+
+.storytitle{
+    position: absolute;
+    align-self: center; 
+    color: white; 
+    letter-spacing: .3rem; 
+    margin-bottom: 0%;
+    font-weight: 400; 
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+/* st-2 */
+.blue-btn{
+    border-radius: 20px;
+    padding:.5rem 1.5rem; 
+    margin-bottom: 3rem;
+    background-color: #62bdf3; 
+    color: white;
+    border: none;
+}
+.blue-btn:hover{
+    background-color: #00a2ff; 
+    color: white;
+}
+.blue-btn:active{
+    background-color: #82d0fd; 
+    color: rgb(122, 122, 122);
+}
+.blue-btn:disabled{
+    background-color: #3d6a85; 
+    color: rgb(255, 255, 255);
+}
+.orange-btn{
+    border-radius: 20px;
+    padding:.5rem 1.5rem; 
+    margin-bottom: 3rem;
+    background-color: #ffb100; 
+    color: white;
+    border: none;
+}
+.orange-btn:hover{
+    background-color: #ff9900; 
+}
+.orange-btn:active{
+    background-color: #fcc169;
+    color: rgb(122, 122, 122); 
+}
+.back-btn{
+    border-radius: 20px;
+    padding:.5rem 1.5rem; 
+    margin-bottom: 3rem;
+    background-color: rgba(255, 255, 255, 0); 
+    color: white;
+    border: solid #fff 1px;
+}
+.back-btn:hover{
+    border-radius: 20px;
+    padding:.5rem 1.5rem; 
+    margin-bottom: 3rem;
+    background-color: white; 
+    color: rgb(95, 95, 95); 
+    border: solid #fff 1px;
+}
+.back-btn:active{
+    border-radius: 20px;
+    padding:.5rem 1.5rem; 
+    margin-bottom: 3rem;
+    background-color: rgb(182, 182, 182); 
+    color: rgb(95, 95, 95); 
+    border: solid rgb(182, 182, 182) 1px;
+}
+#horizontalTab .tab-content li{
+    color: #fff;
+}
+#horizontalTab.script-select .tab-content li{
+    margin: .5rem 0rem 1rem 0rem;
+}
+#horizontalTab.script-select .tab-content li:hover{
+    color: #63bdf3;
+}
+.story-text{
+    height: auto;
+    max-height: 50vh; 
+    overflow: auto; 
+    margin: auto; 
+    padding: 1rem; 
+    line-height: 200%; 
+    color: #fff; 
+    border: rgb(150, 150, 150) solid 1px; 
+    border-radius: .5rem;
+}
+.solution{
+    border-bottom: dashed 1px rgb(150, 150, 150);
+}
+.solution h6{
+    color: #fff; 
+    line-height: 200%;
+}
+.solution p{
+    color: #ffb100; 
+    padding: .5rem;
+    line-height: 2rem;
+}
+.discuss {
+    border-bottom: dashed 1px rgb(150, 150, 150);
+}
+
+.discuss h6 {
+    color: #fff;
+    line-height: 200%;
+}
+.discuss p {
+    color: #62BDF3;
+    margin-bottom: 0rem;
+}
+.description-bg{
+    color: #fff; 
+    line-height: 200%; 
+    padding: 1rem;
+    margin-bottom: 15px; 
+    background-color: rgba(150, 150, 150, 0.253);
+    border-radius: .5rem;
+}
+/* test */
+.testing-box {
+    border-bottom: dashed 1px rgb(150, 150, 150);
+    padding: 1rem .5rem;
+}
+.testing-box li {
+    color: #fff;
+    list-style: none;
+    margin-bottom: .5rem;
+}
+.degree-agreement {
+    display: flex;
+    justify-content: space-between;
+}
+.degree-agreement p {
+    font-size: small;
+    color: #62bdf3;
+    margin-bottom: 0px;
+}
+/* radio */
+.radio-item-group {
+    display: flex;
+    justify-content: space-between;
+}
+.radio-item {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    color: #62bdf3;
+}
+/* 點選範圍 長寬需與.radio-item相同 */
+.radio-item input {
+    width: 32px;
+    height: 32px;
+    /* 單選框隱藏 */
+    opacity: 0;
+    appearance: none;
+    position: absolute;
+}
+.radio-item label {
+    position: absolute;
+    /* 圓外框 */
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    padding: 4px 6px;
+    border: #62bdf3 1px solid;
+    border-radius: 50%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+}
+.radio-item span {
+    display: block;
+    text-align: center;
+}
+/* 點選後背景顏色 */
+.radio-item input:checked+label {
+    border: #ffb100 1.5px solid;
+    background: rgba(255, 179, 0, 0.753);
+}
+/* 點選後字體顏色 */
+.radio-item input:checked+label+span {
+    color: #fff;
+}
+/* map-page */
+.back {
+    color: #eeeeee;
+    border: #eeeeee solid 1px;
+    border-radius: 2rem;
+}
+
+.back:hover {
+    color: #ffb100;
+    border: #ffb100 solid 1px;
+}
+.back h6{
+    color: #fff;
+}
+.back h6:hover{
+    color: #ffb100;
+}
+rwd-map {
+    width: 100%;
+}
+
+img[usemap] {
+    border: none;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+
+.map-role-box {
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 1rem;
+    height: 360px;
+    overflow: auto;
+}
+
+/* accroding  */
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+.card-header {
+    background-color: transparent;
+    border-bottom: none;
+    padding: 0px;
+}
+
+.card-body {
+    padding: 0rem;
+}
+
+.role-type {
+    display: flex;
+    align-items: center;
+}
+
+.role-type img {
+    width: 4rem;
+}
+
+.role-type h5 {
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+.role-position {
+    padding-left: 5rem;
+    font-weight: bold;
+}
+
+.accordion button:hover {
+    background-color: transparent;
+    border: transparent;
+}
+
+.accordion li {
+    margin-bottom: 1rem;
+}
+
+.accordion li:hover {
+    color: #fff;
+}
+
+/* 社政社工 */
+.accordion .sa-sw li {
+    color: #ffe18d;
+}
+
+.accordion .sa-sw a {
+    color: #ffe18d;
+}
+
+/* 醫療社工 */
+.accordion .med-sw li {
+    color: #a8e2f1;
+}
+
+.accordion .med-sw a {
+    color: #a8e2f1;
+}
+
+/* NGO社工 */
+.accordion .ngo-sw li {
+    color: #ffcce6;
+}
+
+.accordion .ngo-sw a {
+    color: #ffcce6;
+}
+/* storybox-storytitle-storyimg */
+@media screen and (max-width:768px){
+    .storybox{
+        width: 80%;
+        margin: .5rem;
+    }
+    .storytitle{
+        font-size: 2rem;
+    }
+    .storybox img:hover{
+        box-shadow:  #ffb100af 0.3em 0.3em .5em;
+    }
+    .content{
+        width: 90%;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1200px){
+    .storybox{
+        margin: .5rem;
+    }
+    .storytitle{
+        font-size: 1.8rem;
+    }
+    .storybox img:hover{
+        box-shadow:  #ffb100af 0.2em 0.2em .5em;
+    }
+    .content{
+        width: 90%;
+    }
+}
+@media screen and (min-width:1201px){
+    .storybox{
+        margin: .5rem;
+    }
+    .storytitle{
+        font-size: 2rem;
+    }
+    .storybox img:hover{
+        box-shadow:  #ffb100af 0.3em 0.3em .5em;
+    }
+    .content{
+        width: 80%;
+    }
+    
+}
